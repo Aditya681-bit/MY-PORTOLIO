@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff4d4d;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 12px #ff4d4d;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      padding: 20px;
+    }
+
+    .service-card {
+      background-color: #111;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 77, 77, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+    }
+
+    .service-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #ff4d4d;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.95em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Services</h1>
+  <p>Here are the key services I offer to help you bring your ideas to life and grow your brand digitally.</p>
+  <div class="services">
+    <div class="service-card">
+      <div class="service-title">Web Development</div>
+      <div class="service-desc">Creating modern, responsive, and dynamic websites.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">Graphic Design</div>
+      <div class="service-desc">Designing logos, banners, thumbnails, and social media creatives.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">Video Editing</div>
+      <div class="service-desc">Crafting professional short videos, reels, and YouTube content.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">SEO & Content</div>
+      <div class="service-desc">Optimizing websites and content for better visibility and ranking.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">UI/UX Design</div>
+      <div class="service-desc">Creating intuitive, user-friendly designs with a seamless experience.</div>
+    </div>
+  </div>
+</body>
+</html>

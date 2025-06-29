@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #00ffc8;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 10px #00ffc8;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      width: 80%;
+    }
+
+    .skill-card {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,255,200,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0,255,200,0.5);
+    }
+
+    .skill-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #00ffc8;
+      margin-bottom: 10px;
+    }
+
+    .skill-desc {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Skills</h1>
+  <p>Here's a quick look at the tools and technologies I specialize in. I'm always learning and growing to stay ahead in the digital world.</p>
+  <div class="skills">
+    <div class="skill-card">
+      <div class="skill-name">HTML & CSS</div>
+      <div class="skill-desc">Building responsive and elegant layouts</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-desc">Creating dynamic, interactive interfaces</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">React</div>
+      <div class="skill-desc">Developing modern web applications</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">UI/UX Design</div>
+      <div class="skill-desc">Designing user-focused, intuitive experiences</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">Video Editing</div>
+      <div class="skill-desc">Crafting engaging video content</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">SEO</div>
+      <div class="skill-desc">Boosting online visibility and ranking</div>
+    </div>
+  </div>
+</body>
+</html>
